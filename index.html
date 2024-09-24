@@ -1,0 +1,57 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Input Form</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>User Information Form</h1>
+
+  <form action="mailto:mayanktiwari763499@gmail.com" method="POST" enctype="text/plain">
+    <!-- Challenge 1: Text input to get the user name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+
+    <!-- Challenge 3: Different form input elements -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" placeholder="Enter your age" required>
+    
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Enter your comments" rows="4"></textarea>
+    
+
+    <!-- Challenge 4: Submit button -->
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
